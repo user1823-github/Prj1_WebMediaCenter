@@ -1,0 +1,554 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- gg font -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500;1,700&family=Ubuntu:wght@300;400;500;700&display=swap');
+        </style>
+
+        <!-- link bootstrap 5 -->
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!-- link custome css -->
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- link product css -->
+        <link rel="stylesheet" href="./css/product.css">
+        <!-- reset css -->
+        <link rel="stylesheet" href="./css/reset.css">
+        <!-- link js -->
+        <script src="./js/shared.js"></script>
+
+    </head>
+    <body>
+        <div class="app position-relative">
+            <a href="index.html"></a>
+            <script>addOverlayAndNavBar()</script>
+            <!-- header -->
+            <script>addHeaderTop()</script>
+            
+            <div class="modal2">
+                <div class="modal__overlay"></div>
+                <div class="modal__body">
+                    <div class="modal__inner position-relative pb-5 pt-4">
+                        <button id="btn-close" class="close">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                        <h3 class="title text-white fs-5 fw-semibold">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                            </svg>
+                            Sản phẩm vừa được thêm vào giỏ hàng 
+                        </h3>
+                        <div class="modal__content">
+                            <div class="modal-img">
+                                <img src="./images/products/may-do-huyet-ap-co-tay-beurer.jpg" alt="">
+                            </div>
+                            <div class="modal-info">
+                                <div class="product-title fs-6">Máy đo huyết áp cổ tay Beurer</div>
+                                <div class="product-new-price fs-6">100.000đ</div>
+                            </div>
+                        </div>
+                        <div class="modal__footer">
+                            <h4 class="modal__footer-title">
+                                <a class="text-center py-2 text-decoration-underline d-flex justify-content-center align-content-center" href="">
+                                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                    </svg>                                  
+                                    <p class="fs-6">Giỏ hàng hiện có ( <span class="cart-popup-count">10</span>) sản phẩm</p>
+                                </a>
+                            </h4>
+                            <a class="btn-payment" href="">
+                                <span class="text-white"> 
+                                    Tiến hành thanh toán
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                    </svg> 
+                                </span>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- main -->
+
+            <!-- section-1 -->
+            <section class="section-1">
+                <div>
+                    <img src="./images/image-1.jpg" class="w-100" alt="">
+                </div>
+            </section>
+
+            <!-- section-2 --> 
+            <section class="section-2 my-5">
+                <div class="section-about  position-relative">
+                    <!-- <div class="section-about-img position-absolute">
+                        <img src="./images/section-2-about.jpg" alt="about" class="w100 d-block">
+                    </div> -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="tab-box-left d-flex flex-wrap col-md-6"> 
+                                <div class="tab-content m-2 p-4">
+                                    <h2 class="tab-text fw-bolder">1</h2>
+                                    <span>Thiết bị hiện đại</span>
+                                </div> 
+                                <div class="tab-content m-2 p-4">
+                                    <h2 class="tab-text fw-bolder">2</h2>
+                                    <span>Chất lượng cao</span>
+                                </div> 
+                                <div class="tab-content m-2 p-4">
+                                    <h2 class="tab-text fw-bolder">3</h2>
+                                    <span>Đội ngũ lành nghề</span>
+                                </div> 
+                                <div class="tab-content m-2 p-4">
+                                    <h2 class="tab-text fw-bolder">4</h2>
+                                    <span>Chăm sóc chu đáo</span>
+                                </div>  
+                            </div>
+                            <!-- right -->
+                            <div class="tab-box-right col-md-6 p-4 p-md-0">
+                                <div class="about-sub fw-bolder spa">Giới thiệu</div>
+                                <h2 class="about-title fw-bolder fs-1 ">Chứng nhận
+                                    <br>Xét nghiệm <span>chuẩn đoán</span>
+                                </h2>
+                                <p>Ego Medical Center tự hào về các kỹ năng được đào tạo cần thiết cho việc chuẩn bị kiểm tra đa dạng. Chúng tôi tin tưởng rằng chẩn đoán kịp thời có thể loại bỏ vết sẹo của nhiều bệnh nghiêm trọng. Nó có thể được thực hiện nếu bạn tham khảo ý kiến bác sĩ cho các bệnh nghi ngờ.</p>
+                                <ul class="p-0">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                        </svg> 
+                                        <li class="list-unstyled lh-lg">Tất cả các báo cáo cho khách hàng được thực hiện đơn giản và dễ hiểu</li>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                        </svg> 
+                                        <li class="list-unstyled lh-lg">Trang web thân thiện với người dùng</li>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                        </svg>
+                                        <li class="list-unstyled lh-lg">Trang web dễ dàng được tùy chỉnh dựa vào thiết lập tối ưu.</li>
+                                    </div>
+                                </ul>
+                                <a href="#" class="text-decoration-none p-2 px-4 mt-3 text-white d-inline-block rounded-pill">Đặt lịch ngay
+                                    <svg class="text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                    </svg> 
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+
+            <!-- section-3 -->
+            <section class="section-3 section-3 py-5">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="title fs-1">Xét nghiệm chuẩn đoán</h2>
+                        <div class="line-decor d-inline-block"></div>
+                    </div>
+                    <div class="nav-pills-icons d-flex justify-content-center flex-wrap align-content-center">
+                        <a href="#" class="nav-link d-block p-4">
+                            <div class="icon text-center">
+                                <img src="./images/icon_tab_1.jpg" alt="" class="w-">
+                            </div>
+                            <span class="d-block text-center fs-6 fw-bold">Tầm soát ung thư</span>
+                        </a>
+                        <a href="#" class="nav-link d-block p-4">
+                            <div class="icon text-center">
+                                <img src="./images/icon_tab_2.jpg" alt="" class="w-">
+                            </div>
+                            <span class="d-block text-black text-center fs-6 fw-bold">Mô học</span>
+                        </a>
+                        <a href="#" class="nav-link d-block p-4">
+                            <div class="icon text-center">
+                                <img src="./images/icon_tab_3.jpg" alt="" class="w-">
+                            </div>
+                            <span class="d-block text-black text-center fs-6 fw-bold">Khám tổng quát</span>
+                        </a>
+                        <a href="#" class="nav-link d-block p-4">
+                            <div class="icon text-center">
+                                <img src="./images/icon_tab_4.jpg" alt="" class="w-">
+                            </div>
+                            <span class="d-block text-black text-center fs-6 fw-bold">Xét nghiệm máu</span>
+                        </a>
+                        <a href="#" class="nav-link d-block p-4">
+                            <div class="icon text-center">
+                                <img src="./images/icon_tab_5.jpg" alt="" class="w-">
+                            </div>
+                            <span class="d-block text-black text-center fs-6 fw-bold">Xét nghiệm di truyền</span>
+                        </a>
+                        <a href="#" class="nav-link d-block p-4">
+                            <div class="icon text-center">
+                                <img src="./images/icon_tab_6.jpg" alt="" class="w-">
+                            </div>
+                            <span class="d-block text-black text-center fs-6 fw-bold">Tế bào học</span>
+                        </a>
+                    </div>
+                    <div class="tab-content">
+                        <div class="row">
+                            <div class="col-12 mb-5 col-md-6">
+                                <img src="./images/img-section-4.jpg" class="h-100 w-100" alt="">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h3 class="fs-2 fw-bold lh-1">Tầm soát ung thư</h3>
+                                <p class="lh-lg">Mỗi năm Việt Nam có hơn 126.000 ca mắc mới mắc bệnh ung thư, trong số đó khoảng 94.000 người tử vong vì phát hiện quá muộn. Việt Nam cũng là một trong những quốc gia có tỷ lệ người dân đi tầm soát ung thư thấp nhất. Nếu được tầm soát và phát hiện sớm, những căn bệnh ung thư sau có thể chữa khỏi hoàn toàn:</p>
+                                <ul class="p-0">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                        </svg> 
+                                        <li class="list-unstyled lh-lg fw-bold">Ung thư phổi</li>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                        </svg> 
+                                        <li class="list-unstyled lh-lg fw-bold">Ung thư gan</li>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                        </svg>
+                                        <li class="list-unstyled lh-lg fw-bold">Ung thư dạ dày</li>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                        </svg>
+                                        <li class="list-unstyled lh-lg fw-bold">Ung thư vú</li>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                        </svg>
+                                        <li class="list-unstyled lh-lg fw-bold">Ung thư cổ tử cung</li>
+                                    </div>
+                                </ul>
+                                <p class="lh-lg">Tầm soát ung thư là phương thức chẩn đoán nhằm phát hiện ra mầm mống ung thư hoặc khi khối u c...</p>
+                                
+                                <!-- btn -->
+                                <a href="#" class="text-decoration-none p-2 px-4 mt-3 text-white d-inline-block rounded-pill">Xem thêm
+                                    <svg class="text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+                                    </svg> 
+                                </a>
+                                <a href="#" class="text-decoration-none p-2 px-4 mt-3 text-white d-inline-block rounded-pill">Đặt lịch ngay
+                                    <svg class="text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                    </svg> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- section-4 -->
+            <section class="section-4">
+                <div class="text-center">
+                    <div class="sub-title fw-bolder fs-5 mb-3">Chúng tôi có</div> 
+                    <h2 class="title fs-1">Sản phẩm y tế</h2>
+                    <div class="line-decor d-inline-block"></div>
+                    <form action="" class="my-5">
+                        <input type="text" name="" id="" placeholder="Tìm sản phẩm khác..." class="px-3 my-5 py-2 rounded-5">
+                        <button type="submit" class="btn-search">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <!-- product -->
+                <div class="container">
+                    <div class="row"> 
+                        <div class="product-box mb-5 col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="product-item position-relative">  
+                                <div class="product-thumnail">
+                                    <a href="" class="product-link">
+                                        <img src="./images/products/may-xong-mui-hong-1.jpg" alt="#" class="w-100 h-100">
+                                    </a>
+
+                                    <div class="action position-absolute">
+                                        <div class="send-to-cart">
+                                            <button type="button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-info text-center">
+                                    <h3 class="product-name">
+                                        <a href="" class="text-decoration-none fs-6 fw-lighter">Máy xông mũi họng</a>
+                                    </h3>
+                                    <div class="price-box">
+                                        <span class="product-price fw-bold fs-6 me-2">1.130.000đ</span>
+                                        <span class="text-decoration-line-through fs-6 opacity-25">120.000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="product-box mb-5 col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="product-item position-relative">  
+                                <div class="product-thumnail">
+                                    <a href="" class="product-link">
+                                        <img src="./images/products/may-xong-mui-hong-1.jpg" alt="#" class="w-100 h-100">
+                                    </a>
+
+                                    <div class="action position-absolute">
+                                        <div class="send-to-cart">
+                                            <button type="button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-info text-center">
+                                    <h3 class="product-name">
+                                        <a href="" class="text-decoration-none fs-6 fw-lighter">Máy xông mũi họng</a>
+                                    </h3>
+                                    <div class="price-box">
+                                        <span class="product-price fw-bold fs-6 me-2">1.130.000đ</span>
+                                        <span class="text-decoration-line-through fs-6 opacity-25">120.000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="product-box mb-5 col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="product-item position-relative">  
+                                <div class="product-thumnail">
+                                    <a href="" class="product-link">
+                                        <img src="./images/products/may-xong-mui-hong-1.jpg" alt="#" class="w-100 h-100">
+                                    </a>
+
+                                    <div class="action position-absolute">
+                                        <div class="send-to-cart">
+                                            <button type="button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-info text-center">
+                                    <h3 class="product-name">
+                                        <a href="" class="text-decoration-none fs-6 fw-lighter">Máy xông mũi họng</a>
+                                    </h3>
+                                    <div class="price-box">
+                                        <span class="product-price fw-bold fs-6 me-2">1.130.000đ</span>
+                                        <span class="text-decoration-line-through fs-6 opacity-25">120.000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="product-box mb-5 col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="product-item position-relative">  
+                                <div class="product-thumnail">
+                                    <a href="" class="product-link">
+                                        <img src="./images/products/may-xong-mui-hong-1.jpg" alt="#" class="w-100 h-100">
+                                    </a>
+
+                                    <div class="action position-absolute">
+                                        <div class="send-to-cart">
+                                            <button type="button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-info text-center">
+                                    <h3 class="product-name">
+                                        <a href="" class="text-decoration-none fs-6 fw-lighter">Máy xông mũi họng</a>
+                                    </h3>
+                                    <div class="price-box">
+                                        <span class="product-price fw-bold fs-6 me-2">1.130.000đ</span>
+                                        <span class="text-decoration-line-through fs-6 opacity-25">120.000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="product-box mb-5 col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="product-item position-relative">  
+                                <div class="product-thumnail">
+                                    <a href="" class="product-link">
+                                        <img src="./images/products/may-xong-mui-hong-1.jpg" alt="#" class="w-100 h-100">
+                                    </a>
+
+                                    <div class="action position-absolute">
+                                        <div class="send-to-cart">
+                                            <button type="button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-info text-center">
+                                    <h3 class="product-name">
+                                        <a href="" class="text-decoration-none fs-6 fw-lighter">Máy xông mũi họng</a>
+                                    </h3>
+                                    <div class="price-box">
+                                        <span class="product-price fw-bold fs-6 me-2">1.130.000đ</span>
+                                        <span class="text-decoration-line-through fs-6 opacity-25">120.000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="product-box mb-5 col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="product-item position-relative">  
+                                <div class="product-thumnail">
+                                    <a href="" class="product-link">
+                                        <img src="./images/products/may-xong-mui-hong-1.jpg" alt="#" class="w-100 h-100">
+                                    </a>
+
+                                    <div class="action position-absolute">
+                                        <div class="send-to-cart">
+                                            <button type="button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-info text-center">
+                                    <h3 class="product-name">
+                                        <a href="" class="text-decoration-none fs-6 fw-lighter">Máy xông mũi họng</a>
+                                    </h3>
+                                    <div class="price-box">
+                                        <span class="product-price fw-bold fs-6 me-2">1.130.000đ</span>
+                                        <span class="text-decoration-line-through fs-6 opacity-25">120.000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="product-box mb-5 col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="product-item position-relative">  
+                                <div class="product-thumnail">
+                                    <a href="" class="product-link">
+                                        <img src="./images/products/may-xong-mui-hong-1.jpg" alt="#" class="w-100 h-100">
+                                    </a>
+
+                                    <div class="action position-absolute">
+                                        <div class="send-to-cart">
+                                            <button type="button">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-info text-center">
+                                    <h3 class="product-name">
+                                        <a href="" class="text-decoration-none fs-6 fw-lighter">Máy xông mũi họng</a>
+                                    </h3>
+                                    <div class="price-box">
+                                        <span class="product-price fw-bold fs-6 me-2">1.130.000đ</span>
+                                        <span class="text-decoration-line-through fs-6 opacity-25">120.000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        
+                    </div>
+                </div>
+            </section>
+            <!-- section-5 -->
+            <section class="section-5">
+                <div class="container-fluid news">
+                    <div class="container">
+                        <div class="row">
+                            <div class="new-item-left col-12 col-lg-6">
+                                <h2 class="title-wrap">Tin & Sự kiện</h2>
+                                <div class="blog-post-box">
+                                    <div class="blog-post-item d-flex">
+                                        <div class="blog-item-left me-3">
+                                            <a href="" class="d-block">
+                                                <img src="./images/products/blogs/blog-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="blog-item-right">
+                                            <span class="fs-6 fw-bold   ">30/03/2020</span>
+                                            <h3 class="fs-5 text-black">Vinmec lập các chốt kiểm dịch 2019 - nCoV</h3>
+                                        </div> 
+                                    </div>
+                                    <div class="blog-post-item d-flex my-4">
+                                        <div class="blog-item-left me-3">
+                                            <a href="" class="d-block">
+                                                <img src="./images/products/blogs/blog-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="blog-item-right">
+                                            <span class="fs-6 fw-bold   ">30/03/2020</span>
+                                            <h3 class="fs-5 text-black">Vinmec lập các chốt kiểm dịch 2019 - nCoV</h3>
+                                        </div> 
+                                    </div>
+                                    <div class="blog-post-item d-flex">
+                                        <div class="blog-item-left me-3">
+                                            <a href="" class="d-block">
+                                                <img src="./images/products/blogs/blog-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="blog-item-right">
+                                            <span class="fs-6 fw-bold   ">30/03/2020</span>
+                                            <h3 class="fs-5 text-black">Vinmec lập các chốt kiểm dịch 2019 - nCoV</h3>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="new-item-right col-12 col-lg-6 bg-white">
+                                <h1 class="py-4">Thành tựu của<span> chúng tôi</span></h1>
+                                <img class="img-big" src="./images/products/blogs/blog-big.jpg" alt="">
+                                <div class="count-hospital w-100">
+                                    <div class="d-flex justify-content-around align-content-center ">
+                                        <div class="counter-box-number">
+                                            <div class="p-2 text-center">
+                                                <span class="number-patient fs-1 text-white">180</span>
+                                                <span class="number-unit fs-1 text-white">K</span> 
+                                            </div>
+                                            <div class="fs-5 fw-bold text-white text-center">Bệnh nhân</div>
+                                        </div>
+                                        <div class="counter-box-number">
+                                            <div class="p-2 text-center">
+                                                <span class="number-doctor fs-1 text-white">180</span>
+                                                <span class="number-unit fs-1 text-white">K</span>
+                                            </div>
+                                            <div class="fs-5 fw-bold text-white text-center">Bác sĩ</div> 
+                                        </div> 
+                                        <div class="counter-box-number">
+                                            <div class="p-2 text-center">
+                                                <span class="number-supplier fs-1 text-white">250</span>
+                                                <span class="number-unit fs-1 text-white">+</span>
+                                            </div>
+                                            <div class="fs-5 fw-bold text-white text-center">Nhà cung cấp</div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- footer -->
+            <script>addFooter()</script>
+        </div>
+
+        <script src="./js/main.js"></script>
+    </body>
+    </html>

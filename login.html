@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+        <!-- link bootstrap 5 -->
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!-- link reset css -->
+        <link rel="stylesheet" href="./css/reset.css">
+        <!-- link custome css -->
+        <link rel="stylesheet" href="./css/style.css"> 
+        <!-- link custome css -->
+        <link rel="stylesheet" href="./css/product.css"> 
+        <!-- link login css -->
+        <link rel="stylesheet" href="./css/login.css">
+        <!-- link shared js -->
+        <script src="./js/shared.js"></script>
+<body>
+    <div class="app position-relative">
+        <script>addOverlayAndNavBar()</script>
+        <script>addHeaderTop()</script>
+        <script>breadCrumb()</script>
+
+        <div class="container ">
+            <div class="row">
+                <div class="col-5 offset-md-4 offset-2">
+                    <div class="login-box">
+                        <div class="login-content">
+                            <h2 class="text-center fs-3">Đăng nhập</h2>
+                            <span class="d-block mt-4 mb-2 text-center">Nếu bạn chưa có tài khoản, đăng ký
+                                <a class="d-inline-block" href="./register.html">tại đây</a>
+                            </span>
+                            <div id="login" class="">
+                                <form action="">
+                                    <fieldset class="form-group">
+                                        <input class="form-control" type="email" placeholder="Email" required>
+                                    </fieldset>
+                                    <fieldset class="form-group">
+                                        <input class="form-control" type="email" placeholder="Mật khẩu" required>
+                                    </fieldset>
+
+                                    <div class="submit-box">
+                                        <button type="submit" class="btn btn-add-cart my-3">
+                                            <span class="text-white">Đăng nhập</span>
+                                        </button>
+                                        <div class="form-change d-flex align-items-center justify-content-center">
+                                            <a href="" class="ms-3">Quên mật khẩu</a>  
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="social-login text-center my-5">
+                                    <p>Hoặc đăng nhập bằng</p>
+                                    <a href="" class="social-link-box">
+                                        <img src="./images/socials/social-fb.png" alt="">
+                                    </a>
+                                    <a href="" class="social-link-box">
+                                        <img src="./images/socials/social-google.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>addFooter()</script>
+    </div>
+    
+</body>
+</html>

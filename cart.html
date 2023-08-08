@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+        <!-- link bootstrap 5 -->
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!-- link reset css -->
+        <link rel="stylesheet" href="./css/reset.css">
+        <!-- link custome css -->
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- link css product.css for breadCrumb version 1 -->
+        <link rel="stylesheet" href="./css/product.css">
+        <link rel="stylesheet" href="./css/cart.css">
+        <!-- link shared js -->
+        <script src="./js/shared.js"></script>
+
+<body>
+    <div class="app position-relative">
+        <script>addOverlayAndNavBar()</script>
+        <script>addHeaderTop()</script>
+        <script>breadCrumb()</script>
+
+        <div class="container mb-5">
+            <div class="cart-box">
+                <div class="cart-content">
+                    <h2 class="title fs-5 fw-bold">giỏ hàng của bạn</h2>
+                    <div class="py-3 bg-body-tertiary cart-product d-flex justify-content-around align-items-center">
+                        <div class="cart-img">
+                            <img src="./images/products/khau-trang-vai-khang-khuan.jpg" alt="">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">
+                                <a class="product-name-link px-3" href="">Khẩu trang vải xuất khẩu</a>
+                            </div>
+                            <div class="product-price fs-6 px-3">100.000₫</div>
+                            <div class="product-type"></div>
+                        </div>
+                        <div class="box-input-number-cart my-4 position-relative">
+                            <button class="position-absolute">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>  
+                            </button>
+                            <input type="text" name="quantity" value="1" maxlength="3" min="0" size="4">
+                            <button class="position-absolute">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </button>
+                        </div> 
+                        <div class="price-quantity-total">
+                            <span class="d-none d-xl-block">200.000₫</span>
+                        </div>
+                        <div class="box-close-content d-none d-lg-block">
+                            <button id="btn-close" class="close-drop-product">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div> 
+                        <div class="btn-remove-cart d-block d-lg-none">
+                            <a href="" class="btn-remove-cart-link mx-3 mx-md-0">Xóa</a>
+                        </div> 
+                    </div>
+                     
+                    
+                </div>
+            </div>
+
+            <div class="price-all-total my-4 fw-bold fs-5">
+                <div class="text-left  d-inline-block float-right fs-5">Tổng tiền</div>
+                <div class="price-all-bill text-end float-end fs-5">3.390.000₫</div>
+            </div>
+
+            <div class="cart-payment">
+                <div class="button-actions d-md-flex justify-content-start align-content-center">
+                    <button type="submit" class="btn btn-add-cart my-3">
+                        <span class="text-white">
+                            <svg class="" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                            </svg> 
+                            Tiếp tục mua hàng
+                        </span>
+                    </button>
+                    <button type="submit" class="btn btn-buy my-3">
+                        <span class="text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                            </svg>
+                            Tiến hành thanh toán
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script>addFooter()</script>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

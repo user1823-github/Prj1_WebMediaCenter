@@ -1,0 +1,354 @@
+@import url('./color.css');
+@import url('./animation.css');
+
+/* .close-modal {
+    display: none !important;
+} */
+ 
+.close {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    max-width: 20px;
+    background-color: transparent !important; 
+}
+
+.close svg {
+    width: 100%;
+    color: #333333;
+    cursor: pointer;
+}
+
+.modal2 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0; 
+    z-index: 0; 
+    visibility: hidden;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: -100;
+    transition: all 0.2s linear;
+    opacity: 0;
+}
+
+.modal__body {
+    /* position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    margin: auto;
+    position: relative;
+    background-color: white;
+    z-index: -100;
+    transition: all 0.2s linear; 
+    opacity: 0; 
+}
+
+.modal__inner {
+    width: 500px;
+    padding: 20px;
+}
+
+.modal2 .title svg {
+    width: 19px;
+}
+
+.modal__content {
+    display: flex;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 16px 0;
+
+}
+
+.modal__content .modal-img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 20px;
+}
+
+.modal__content .modal-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.modal__footer .btn-payment {
+    display: block;
+    height: 50px;
+    border-radius: 45px;
+    font-size: 16px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.modal__footer .btn-payment svg {
+    width: 20px;
+}
+ 
+
+.modal__footer .btn-payment:before { 
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%; 
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: -1;
+    transition: transform 300ms ease-in-out;
+    border-radius: 45px;
+}
+  
+.modal__footer .btn-payment:before { 
+    background-color: var(--text-sub-color); 
+}
+
+.modal__footer .btn-payment { 
+    background-color: var(--text-primary-color); 
+    width: 100%; 
+    margin-right: 20px;
+} 
+
+.modal__footer .btn-payment:hover::before,
+.modal__footer .btn-payment:focus::before {
+    transform: scaleX(1); 
+}
+
+.modal-info .product-title,
+.modal-info .product-new-price {
+    line-height: 2;
+}
+
+.modal__inner .title,
+.modal-info .product-title,
+.modal-info .product-new-price,
+.modal__footer-title a p {
+    color: var(--text-basic) !important;
+}
+
+.modal__footer-title a svg {
+    width: 13px;
+    color: var(--text-basic); 
+}
+
+.modal__footer-title a:hover svg,
+.modal__footer-title a:hover p {
+    color: var(--text-sub-color) !important;
+}
+
+
+
+
+
+/*  */
+.bread-crumb {
+    padding: 110px 0px;
+    background-image: url(../images/productTheme/theme_product.jpg);
+}
+
+.bread-crumb .breadcrumb-item__link {
+    color: #ffffff;
+    opacity: 0.9;
+} 
+
+.bread-crumb .breadcrumb-item__link:hover {
+    color: var(--text-primary-color);
+
+}
+
+.bread-crumb .breadcrumb-item__link span {
+    color: var(--text-primary-color);
+}
+
+.bread-crumb .icon-row-right {
+    display: block;
+    width: 12px;
+}
+
+.bread-crumb .icon-row-right svg {
+    width: 100%;
+    display: block;
+    color: #fff;
+    display: block !important;
+}
+
+.product-detail .container .row .img-link {
+    width: 100%;
+}
+
+.product-detail .container .row .img-link img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-detail .container .row .img-link img:hover {
+    border: 1px solid var(--text-primary-color);
+}
+
+.product-detail fieldset .select-wrapper select {
+    color: #444;
+    background-color: #ebebeb;
+    border-color: #b9b5b5; 
+    height: 45px;
+    cursor: pointer;
+    outline: none;
+}
+
+.product-detail .box-input-number {
+    width: 150px;
+    border-radius: 45px;
+    overflow: hidden;
+}
+
+.product-detail .box-input-number input {
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 45px;
+    border-color: transparent;
+    background-color: #ebebeb;
+    width: 100%;
+    outline: none;
+}
+
+.product-detail .box-input-number button {
+    width: 25px;
+    outline: none;
+}
+
+.product-detail .box-input-number button:first-child {
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.product-detail .box-input-number button:last-child {
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+}
+
+.product-detail .box-input-number button {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+}
+
+/* css btn buy */
+.product-detail .button-actions button {
+    display: block;
+    height: 50px;
+    border-radius: 45px;
+    font-size: 16px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    
+}
+
+.product-detail .button-actions button:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%; 
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: -1;
+    transition: transform 300ms ease-in-out;
+    border-radius: 45px;
+}
+
+.product-detail .button-actions button:first-child:before { 
+    background-color: var(--text-sub-color); 
+}
+ 
+.product-detail .button-actions button:first-child { 
+    background-color: var(--text-primary-color); 
+    width: 250px; 
+    margin-right: 20px;
+} 
+
+.product-detail .button-actions button:last-child:before { 
+    background-color: var(--text-primary-color); 
+}
+
+.product-detail .button-actions button:last-child { 
+    background-color: var(--text-sub-color); 
+    width: 170px; 
+}
+
+.product-detail .button-actions button:hover::before,
+.product-detail .button-actions button:focus::before {
+    transform: scaleX(1); 
+} 
+
+.product-detail .button-actions button:last-child:hover {
+    animation: bgHoverButton 1s ease;
+
+}
+
+.product-detail .button-actions button span svg {
+    margin-top: -5px;
+    width: 24px;
+}
+
+.product-info .product-tab {
+    border: 2px solid var(--border-color);
+}
+
+.product-info .product-tab h3 {
+    position: relative;
+}
+
+.product-info .product-tab h3.able::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: var(--text-sub-color);
+    left: 0;
+    bottom: -10px;
+}
+
+.product-info .tabs {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.product-info .tabs-float p {
+    color: var(--text-basic);
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.product-info .tabs-float p img {
+    display: block;
+    width: 400px;
+    height: 400px;
+
+}
+

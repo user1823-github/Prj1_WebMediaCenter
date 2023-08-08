@@ -1,0 +1,24 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    height: 100vh;
+} */
+
+button {
+    outline: none;
+    border: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+h4 {
+    margin-bottom: 0;
+}

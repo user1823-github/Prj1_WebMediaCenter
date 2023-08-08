@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <!-- link bootstrap 5 -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- link reset css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- link custome css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- link css product -->
+    <link rel="stylesheet" href="./css/product.css">
+    <!-- link js -->
+    <script src="./js/shared.js"></script>
+
+<body>
+    
+
+    <div class="app position-relative">
+        <script>addOverlayAndNavBar()</script>
+            <!-- header -->
+        <script>addHeaderTop()</script> 
+
+        <!-- popup modal -->
+        <div class="modal2">
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
+                <div class="modal__inner position-relative pb-5 pt-4">
+                    <button id="btn-close" class="close">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                    <h3 class="title text-white fs-5 fw-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                        </svg>
+                        Sản phẩm vừa được thêm vào giỏ hàng 
+                    </h3>
+                    <div class="modal__content">
+                        <div class="modal-img">
+                            <img src="./images/products/may-do-huyet-ap-co-tay-beurer.jpg" alt="">
+                        </div>
+                        <div class="modal-info">
+                            <div class="product-title fs-6">Máy đo huyết áp cổ tay Beurer</div>
+                            <div class="product-new-price fs-6">100.000đ</div>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <h4 class="modal__footer-title">
+                            <a class="text-center py-2 text-decoration-underline d-flex justify-content-center align-content-center" href="">
+                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>                                  
+                                <p class="fs-6">Giỏ hàng hiện có ( <span class="cart-popup-count">10</span>) sản phẩm</p>
+                            </a>
+                        </h4>
+                        <a class="btn-payment" href="">
+                            <span class="text-white"> 
+                                Tiến hành thanh toán
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                                </svg> 
+                            </span>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <!-- view one product -->
+        <script>breadCrumb()</script>
+
+        <!-- product-detail -->
+        <section class="product-detail mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div><a href="">
+                            <img src="./images/products/may-do-huyet-ap-co-tay-beurer.jpg" alt="">
+                        </a></div>
+                        <div class="select-img-product">
+                            <div class="d-flex">
+                                <a href="" class="d-block img-link"><img src="./images/products/may-xong-mui-hong-1.jpg" alt=""></a>
+                                <a href="" class="d-block img-link"><img src="./images/products/may-xong-mui-hong-1.jpg" alt=""></a>
+                                <a href="" class="d-block img-link"><img src="./images/products/may-xong-mui-hong-1.jpg" alt=""></a>
+                                <a href="" class="d-block img-link"><img src="./images/products/may-xong-mui-hong-1.jpg" alt=""></a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h1 class="fs-2">Máy xông mũi họng</h1>
+                        <div>
+                            <span class="product-price fs-4 fw-bold">1.130.000₫</span>
+                            <p class="product-descrption py-3">Kính gửi Quý khách hàng! Nhằm đảo bảo sức khỏe cho Quý khách và cộng đồng trong đại dịch Covid-19, Quý khách vui lòng không đến trực tiếp mua hàng . Chúng tôi sẽ Giao hàng và thu tiền tại nhà trên toàn quốc cho Quý khách. Với trên 13 năm kinh nghiệm bán hàng Online chúng tôi sẽ làm hài lòng Quý khách.</p>
+                        </div>
+                        <div>
+                            <fieldset>
+                                <div class="select-wrapper">
+                                    <label for="" class="fw-bold d-block py-2 ">Màu sắc</label>
+                                    <select name="" id="" class="rounded-1 mt-2 mb-5 w-50 px-3">
+                                        <option value="Vàng" class="option-input fs-6">Vàng</option>
+                                        <option value="Trắng" class="option-input fs-6">Trắng</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <div>
+                                <span class="fw-bold">Số lượng</span>
+                                <div class="box-input-number my-4 position-relative">
+                                    <button class="position-absolute">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>  
+                                    </button>
+                                    <input type="text" name="quantity" value="1">
+                                    <button class="position-absolute">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="button-actions d-flex justify-content-start align-content-center">
+                                <button type="submit" class="btn btn-add-cart">
+                                    <span class="text-white">
+                                        <svg class="" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                        </svg> 
+                                        Thêm vào giỏ hàng
+                                    </span>
+                                </button>
+                                <button type="submit" class="btn btn-buy">
+                                    <span class="text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                                        </svg>
+                                        Mua ngay
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-info mt-5">
+                    <div class="product-tab p-4 pt-0 ">
+                        <ul class="tabs d-flex justify-content-start align-content-center">
+                            <li class="tab-link list-unstyled me-5 py-2">
+                                <h3 class="mb-0 able"><span class="fs-6 fw-bold">Thông tin sản phẩm</span></h3>
+                            </li>
+                            <li class="tab-link list-unstyled py-2">
+                            <h3 class="mb-0"><span class="fs-6 fw-bold">Quy định bảo hành</span></h3>
+                            </li>
+                        </ul>
+                        <div class="tabs-float">
+                            <div class="tab-content">
+                                <div class="product-getcontent">
+                                    <div class="pt-3">
+                                        <p>
+                                            Máy xông mũi họng Omron NE-C28 giúp điều trị các bệnh về đường hô hấp hiệu quả
+                                            <br>
+                                            Máy xông mũi họng Omron NE C28 là dòng máy xông mũi họng gia đình có thể dùng cho cả người lớn và trẻ em, giúp hỗ trợ điều trị các bệnh viêm mũi, viêm xoang hay viêm họng, viêm phế quản, phổi, hen suyễn… một cách hiệu quả và không gây phản ứng phụ cho hệ tiêu hóa như việc điều trị bằng phương pháp uống thuốc.
+                                        </p>
+                                        <p class="d-flex justify-content-center"><img src="./images/products/may-do-huyet-ap-co-tay-beurer.jpg" alt=""></p>
+                                        <p>Máy xông khí dung Omron NE-C28 hoạt động theo nguyên lý đưa thuốc trực tiếp vào tận các tiểu phế nang của phổi với tốc độ phun khí là 0,4 ml/phút với kích thước hạt là 3 micron, giúp đem lại hiệu quả điều trị nhanh chóng. </p>
+                                        <p>Dung tích cốc thuốc tối đa là 7ml. Máy xông mũi họng sử dụng nguồn điện 1 pha, vận hành êm ái. Thân máy bằng nhựa cao cấp cho độ bền cao.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+
+        <!-- <div class="container">
+            <div>
+                <h2 class="title-related">Sản phẩm liên quan</h2>
+                <div class="products-related">
+                    <button class="previous"></button>
+                    <div class="products">
+                        <div class="slide-track">
+                            <div class="item-product__main">
+                                <div class="product-thumbnail">
+                                    <a href="">
+                                        <img src="./images/products/may-do-huyet-ap-co-tay-beurer.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-name">Máy đo huyết áp cổ tay Đức</h3>
+                                    <div class="price-box">
+                                        <span class="price-new">100.000₫</span>
+                                        <span class="price-old">100.000₫</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="next"></button>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- footer -->
+        <script>addFooter()</script> 
+        <script src="./js/main.js"></script>
+        <script src="./js/productDetail.js"></script>
+    </div>
+</body>
+</html>
